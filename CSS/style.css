@@ -1,0 +1,162 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color:  rgba(243, 245, 252, 1);
+    padding-bottom: 0;
+}
+h1 {
+    color: rgba(10, 56, 113, 1);
+}
+/*estilo do menu e footer*/
+.logo, .conteudo{
+    background-color: rgba(10, 56, 113, 1);
+}
+.logo img {
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+/*estilo do area para index e novapalavra*/
+.area, .area-index {
+    background-color: rgba(243, 245, 252, 1);
+    text-align: center;
+}
+
+.btnjogo, .btnnovo, .btnnovo2, .btnjogo2, .btnnovo3, .btnjogo3 {
+    border-radius: 6px; 
+    padding: 15px 15px; 
+    cursor: pointer; 
+    border-color: rgba(10, 56, 113, 1); 
+    font-size: 16px;
+   
+}
+.btnjogo, .btnjogo2, .btnjogo3 {
+    background:rgba(10, 56, 113, 1);
+    color: rgba(243, 245, 252, 1);
+    margin-bottom: 25px;
+    padding: 15px 60px 15px 60px; 
+}
+.btnnovo, .btnnovo2, .btnnovo3 {
+    background:rgba(243, 245, 252, 1);
+    color: rgba(10, 56, 113, 1);
+}
+.btnjogo:hover, .btnnovo:hover, .btnnovo2:hover, .btnjogo2:hover, .btnnovo3:hover {
+    background:rgba(10, 56, 113, 0.5);
+    color: rgba(243, 245, 252, 1);
+}
+/*estilo do area do novapalavra*/
+
+.btnnovo2 {
+    padding: 15px 30px 15px 30px; 
+}
+.btnjogo2 {
+    padding: 15px 65px 15px 65px; 
+}
+.fonte {
+    color: gray;
+    font-weight: bold;
+    font-size: 6px;
+}
+.digitar {
+    margin-top: 130px;
+}
+#escrever {
+    background-color: rgba(243, 245, 252, 1);
+    border-color: rgba(10, 56, 113, 1);
+    border-radius: 6px;
+    height: 90px;
+    width: 400px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+::placeholder {
+    color: rgba(10, 56, 113, 1);
+    font-size: 20px;
+    text-align: center;
+   
+}
+/*estilo do jogo*/
+.btnnovo {
+    padding: 15px 45px 15px 45px;
+}
+.btnnovo3 {
+    padding: 15px 70px 15px 70px;
+}
+
+#imagem{
+    background-image: url("../Imagems/imagemum.jpg");
+    width: 160px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 500px;
+ 
+}
+#palavra-secreta, .letra-escolhida{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.letras, .escolhido{
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid rgba(10, 56, 113, 1);
+    color: rgba(10, 56, 113, 1);
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#teclado{
+    margin-top: 30px;
+}
+
+.teclas button{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow:  0px 2px 8px rgba(128, 128, 128, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 1); 
+    background-color: rgba(10, 56, 113, 1); 
+    color: rgba(243, 245, 252, 1);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .conteudo .area {
+      flex-direction: column;
+    }
+    .links {
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    .teclas button{
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    #imagem {
+        margin-left: 150px;
+    }
+    #escrever {
+        height: 90px;
+        width: 300px;
+    }
+    ::placeholder {
+        font-size: 14px;
+    }
+}
